@@ -109,35 +109,37 @@
             <div class="container py-md-4 py-3">
                 <div class="contact-w3pvt-form">
                     <h3 class="title-big mb-5">Get In Touch</h3>
-                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
-          <input type="hidden" name="access_key" value="8aecba4d-2b58-4329-b92a-711cd14173b1" />
-          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                    <form method="post" class="w3layouts-contact-fm" action="https://api.web3forms.com/submit" enctype="multipart/form-data">
+    <!-- Hidden input for Web3Forms access key -->
+    <input type="hidden" name="access_key" value="YOUR_PUBLIC_ACCESS_KEY_HERE">
+    
+    <div class="row main-cont-sec">
+        <div class="col-md-6 left-cont-contact">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input class="form-control" type="text" name="firstName" id="firstName" placeholder="" required="">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input class="form-control" type="text" name="lastName" id="lastName" placeholder="" required="">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="" required="">
+            </div>
+        </div>
+        <div class="col-md-6 right-cont-contact mt-md-0 mt-1">
+            <div class="form-group">
+                <label for="message">Write Message</label>
+                <textarea class="form-control" name="message" id="message" placeholder="" required=""></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-2 mt-4">
+        <button type="submit" class="btn button-style d-flex ml-auto">Send Now</button>
+    </div>
+</form>
 
-          <div class="mb-6">
-            <label for="name" class="block mb-2 text-sm text-gray-400">Full Name</label>
-            <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
-          </div>
-          <div class="mb-6">
-            <label for="email" class="block mb-2 text-sm text-gray-400">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
-          </div>
-          <div class="mb-6">
-            <label for="phone" class="block mb-2 text-sm text-gray-400">Phone Number</label>
-            <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
-          </div>
-          <div class="mb-6">
-            <label for="message" class="block mb-2 text-sm text-gray-400">Your Message</label>
-
-            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" required></textarea>
-          </div>
-          <div class="mb-6">
-            <button type="submit" class="w-full bg-indigo-600 inline-block text-white no-underline hover:text-indigo-100 py-4 px-4 rounded-sm focus:outline-none">
-              Send Message
-            </button>
-          </div>
-          <p class="text-base text-center text-gray-400" id="result"></p>
-        </form>
                     <iframe class="map-w3layouts"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016727.020267082!2d73.49614370339452!3d10.533317410371238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1731079870718!5m2!1sen!2sin"
                         allowfullscreen></iframe>
