@@ -109,33 +109,34 @@
             <div class="container py-md-4 py-3">
                 <div class="contact-w3pvt-form">
                     <h3 class="title-big mb-5">Get In Touch</h3>
-                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
-    <input type="hidden" name="access_key" value="8aecba4d-2b58-4329-b92a-711cd14173b1" />
+                    <form method="post" class="w3layouts-contact-fm" action="https://api.web3forms.com/submit">
+                        <input type="hidden" name="access_key" value="8aecba4d-2b58-4329-b92a-711cd14173b1" />
     <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
     <input type="hidden" name="from_name" value="My Website" />
-    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
-
-    <div class="form-group-container">
-      <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-      </div>
-      <div class="form-group">
-        <label for="phone" class="form-label">Phone</label>
-        <input id="phone" name="phone" class="form-input" placeholder="+91 90377 10664" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-      </div>
-    </div>
-    <button class="form-submit" type="submit">Send Message</button>
-  </form>
+                                </div>
+                                <div class="form-group">
+                                    <label for="w3lName">Last Name</label>
+                                    <input class="form-control" type="text" name="w3lName" id="w3lName" placeholder=""
+                                        required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="w3lSender">Email</label>
+                                    <input class="form-control" type="email" name="w3lSender" id="w3lSender"
+                                        placeholder="" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 right-cont-contact mt-md-0 mt-1">
+                                <div class="form-group">
+                                    <label for="w3lSubject">Write Message</label>
+                                    <textarea class="form-control" name="w3lMessage" id="w3lMessage" placeholder=""
+                                        required=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group-2 mt-4">
+                            <button type="submit" class="btn button-style d-flex ml-auto">Send Now</button>
+                        </div>
+                    </form>
                     <iframe class="map-w3layouts"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016727.020267082!2d73.49614370339452!3d10.533317410371238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1731079870718!5m2!1sen!2sin"
                         allowfullscreen></iframe>
