@@ -15737,8 +15737,10 @@ h3.title-big {
 
 @media (max-width: 480px) {
   h3.title-big {
-    font-size: 26px;
-    line-height: 44px;
+            font-size: 27px;
+        line-height: 46px;
+        margin-right: 6rem;
+    
   }
   .w3l-about2 .about-2-secs p{
     font-size: 14px;
