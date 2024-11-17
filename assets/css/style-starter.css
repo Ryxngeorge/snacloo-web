@@ -16939,7 +16939,9 @@ h3.title-main2-blog-single {
 .error-buttton {
   background-color: var(--primary-color);
 }
-
+.w3l-footer-16 p.copy-text a{
+  font-size:25px;
+}
 @media all and (max-width: 600px) {
   .w3l-error-main h3.text-err-wthree {
     font-size: 5em;
